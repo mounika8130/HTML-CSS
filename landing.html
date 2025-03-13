@@ -1,0 +1,284 @@
+<html>
+<head>
+    <style>
+        #main {
+            height: 100px;
+            width: 1200px;
+            border: 2px solid black;
+            display: flex;
+            background-color: black;
+        }
+        #logo {
+            height: 100px;
+            width: 200px;
+        }
+        #nav {
+            height: 100px;
+            width: 1020px;
+            margin-top: 30px;
+            margin-left: 30px;
+            padding-right: 2px;
+        }
+        #nav a {
+            text-decoration: none;
+            padding: 15px;
+            text-align: center;
+            font-size: medium;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            color: black;    
+        }
+        #sgn {
+            background-color: rgb(236, 231, 150);
+            color: black;
+        }
+        .box {
+            height: 800px;
+            width: 900px;
+            margin: auto;
+            margin-top: 30px;
+            background-color: black;
+            color: azure;
+            position: relative;
+            border: 2px solid black;
+            margin-bottom: 20px;
+        }
+        .img {
+            height: 300px;
+            width: 100%;
+            margin: auto;
+        }
+        .grid {
+            height: 200px;
+            width: 900px;
+            border: 2px solid rgb(8, 8, 8);
+            background-color: black;
+            margin: auto;
+            display: flex;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+        .p {
+            background-color: black;
+            text-align: center;
+            font-size: x-large;
+            color: beige;
+        }
+        #grid-container {
+            width: 100%;
+            height: 400px;
+            background-color: black; 
+            margin-left: 180px; 
+            text-align: center;
+            display: grid;
+            grid-template-rows: repeat(4, 5fr);
+            grid-template-columns: repeat(4, 5fr);
+        }
+        .a {
+            width: 200px;
+            height: 200px;
+            border: 3px solid rgb(9, 9, 9);
+            background-color: black;
+            margin: auto;
+        }
+        button {
+            border-radius: 50px;
+            color: blue;
+            padding: 10px 20px;
+            background-color: aqua;
+            cursor: pointer;
+            margin: auto;
+        }
+        .footer {
+            height: 150px;
+            width: 1220px;
+            background-color: black;
+            margin-top: 55px;
+            display: flex;
+            text-align: center;
+        }
+        .footer-container,
+        .footer-section,
+        .footer-selection {
+            color: white;
+            margin-left: 150px;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="logo">
+            <img height="100%" width="100%" src="https://img.freepik.com/premium-vector/catering-service-logo-vector-isolated-white-background-eps-10_399089-1877.jpg?w=2000" alt="Catering Service Logo">
+        </div>
+        <div id="nav">
+            <button id="sgn"><a href="">Home</a></button>
+            <button id="sgn"><a href="">About us</a></button>
+            <button id="sgn"><a href="">Menu</a></button>
+            <button id="sgn"><a href="">Chief</a></button>
+            <button id="sgn"><a href="">Service</a></button>
+            <button id="sgn"><a href="">Schedule</a></button>
+            <button id="sgn"><a href="">Contact Us</a></button>  
+        </div>
+    </div>
+    
+    <div class="p">
+        <marquee behavior="scroll" direction="left">Vindu Caterers offering a wide range of food options and customized menu, customers can get benefited according to their taste of food options.</marquee>
+    </div>
+    
+    <div class="img">
+        <img height="300px" width="100%" src="https://img.freepik.com/premium-photo/chefs-cook-their-kitchen-serve-food-fire_564714-7625.jpg" alt="Chefs Cooking">
+    </div>
+    
+    <div class="p">
+        <center><h5>VINDU ARCHI A FOOD CATERING SERVICE</h5></center>
+        <p>We undertake all party orders (B-day, Wedding Catering, Corporate Event Catering etc..). This service involves preparing food off-site and delivering it to an office or workplace. It’s convenient for meetings or employee lunches where quick service is provided.</p>
+    </div>
+    
+    <div class="grid">
+        <img id="dog" height="200px" width="250px" src="https://img.staticmb.com/mbcontent/images/uploads/2022/12/haldi-decoration.jpg" alt="Decoration Image">
+        <img height="200px" width="250px" src="https://i.pinimg.com/originals/29/16/50/291650afb65d30259efc8d0c2fd0a62d.jpg" alt="Food Decoration 1">
+        <img height="200px" width="250px" src="https://i.pinimg.com/originals/e0/bc/81/e0bc81b5af63962cf8606d6a3cc69921.jpg" alt="Food Decoration 2">
+    </div>
+    
+    <div id="grid-container">
+        <div class="a">
+            <img width="200" height="200" src="https://cdn.mos.cms.futurecdn.net/ZFNkBaKgjoP8tQpJr2u98g-1200-80.jpg" alt="Dish 1">
+        </div>
+        <div class="a">
+            <img width="200" height="200" src="https://www.inspiredtaste.net/wp-content/uploads/2018/10/Homemade-Vegetable-Soup-Recipe-1-1200.jpg" alt="Dish 2">
+        </div>
+        <div class="a">
+            <img width="200" height="200" src="https://www.foodfusion.com/wp-content/uploads/2018/03/2-1.jpg" alt="Dish 3">
+        </div>
+        <div class="a">
+            <img width="200" height="200" src="https://th.bing.com/th/id/R.a7d9403986c1206e013e05ed69812b25?rik=zl%2ffleBDE%2bTPBg&riu=http%3a%2f%2fimg.sndimg.com%2ffood%2fimage%2fupload%2fq_92%2cfl_progressive%2fv1%2fimg%2frecipes%2f22%2f55%2f71%2f222x87iSNegy7GYCYxxU_pesto-bruschetta-6690.jpg&ehk=suzcFh5w%2bKLjvOJqeXmieEQhnMJEGjJsl7%2bsFbNbq18%3d&risl=&pid=ImgRaw&r=0" alt="Dish 4">
+        </div>
+        <div class="a">
+            <img width="200" height="200" src="https://th.bing.com/th/id/R.dbba64bc00d736b6accf76ac6ce248b1?rik=cxzrgrHR8txftg&riu=http%3a%2f%2feskipaper.com%2fimages%2fpastries-1.jpg&ehk=wqEJ3wTP0GVwxBIqk9GwpJglMhbUAdBbosv4%2fi6KeLY%3d&risl=&pid=ImgRaw&r=0" alt="Dish 5">
+        </div>
+        <div class="a">
+            <img width="200" height="200" src="https://im.whatshot.in/img/2019/Apr/shutterstock-562943647-cropped-1555313280.jpg" alt="Dish 6">
+        </div>
+        <div class="a">
+            <img width="200" height="200" src="https://www.livofy.com/health/wp-content/uploads/2020/05/Pesto-Chicken-Salad-Recipe-683x1024.jpg" alt="Dish 7">
+        </div>
+        <div class="a">
+            <img width="200" height="200" src="https://thesaltymarshmallow.com/wp-content/uploads/2019/09/Pan-Fried-Noodles-Recipe-02.jpg" alt="Dish 8">
+        </div>
+    </div>
+
+    <div class="p">
+        <h2><center><u>MENU</u></center></h2>
+    </div>
+
+    <div class="box">
+        <div id="box-1">
+            <h4><u>Soups & Beverages</u></h4>
+            <ul>
+                <li>Coffee ₹ 35</li>
+                <li>Tomato Soup ₹ 55</li>
+                <li>Sweet Corn Soup ₹ 55</li>
+                <li>Asparagus Soup with Chicken ₹ 70</li>
+                <li>Pineapple/Orange Blossom ₹ 50</li>
+                <li>Mango Panna ₹ 40</li>
+                <li>Mocktail Counter ₹ 70</li>
+                <li>Cold Drinks ₹ 50</li>
+            </ul>
+            <h4><u>Snacks</u></h4>
+            <ul>
+                <li>Baby Corn Fry ₹ 40</li>
+                <li>Chicken Pakora ₹ 80</li>
+                <li>Fish Balls ₹ 40</li>
+                <li>Paneer Balls ₹ 40</li>
+                <li>Honey Potato Wedges ₹ 40</li>
+                <li>Veg. Momo ₹ 45</li>
+                <li>Chicken Momo ₹ 70</li>
+                <li>Chicken Wonton ₹ 80</li>
+            </ul>
+            <h4><u>Roti</u></h4>
+            <ul>
+                <li>Luchi ₹ 30</li>
+                <li>Radhaballavi ₹ 30</li>
+                <li>Peas Kachuri ₹ 30</li>
+                <li>Dal Kachuri ₹ 30</li>
+                <li>Club Kachuri ₹ 30</li>
+                <li>Paratha (Ring) ₹ 40</li>
+                <li>Batura ₹ 40</li>
+                <li>Kulcha ₹ 40</li>
+                <li>Masala Kulcha ₹ 40</li>
+                <li>Butter Nan ₹ 40</li>
+                <li>Rumali Roti ₹ 40</li>
+            </ul>
+            <h4><u>Salads</u></h4>
+            <ul>
+                <li>Green Salad ₹ 55</li>
+                <li>Pasta Salad (Live Counter) ₹ 35</li>
+                <li>Salad Bar ₹ 35</li>
+            </ul>
+        </div>
+        <div id="box-2">
+            <h4><u>Rice Dishes</u></h4>
+            <ul>
+                <li>Veg. Fried Rice ₹ 55</li>
+                <li>Chicken Fried Rice ₹ 55</li>
+                <li>Mixed Fried Rice ₹ 65</li>
+                <li>Egg & Prawn Fried Rice ₹ 55</li>
+                <li>Pulao ₹ 55</li>
+                <li>Navratan Pulao ₹ 55</li>
+                <li>Peas Pulao ₹ 55</li>
+                <li>Mexican Rice ₹ 70</li>
+                <li>Chicken Kebab Biriyani ₹ 145</li>
+                <li>Mutton Moti Biriyani ₹ 200</li>
+                <li>Mutton Biriyani (Bone-in) ₹ 215</li>
+                <li>Mutton Biriyani (Boneless) ₹ 260</li>
+            </ul>
+            <h4><u>Desserts</u></h4>
+            <ul>
+                <li>Gulab Jamun Price Varies</li>
+                <li>Ice Cream (Various Flavors) Price Varies</li>
+            </ul>
+            <h4><u>Beverages</u></h4>
+            <ul>
+                <li>Soft Drinks (Coke, Pepsi, etc.) ₹ 50</li>
+                <li>Juices (Orange, Apple, etc.) ₹ 60</li>
+                <li>Milk Shakes ₹ 180-350</li>
+                <li>Lassi ₹ 40-300</li>
+            </ul>
+        </div>
+        <div id="box-3">
+            <h2>Contact us for more details</h2>
+            <h4>+91 04078912</h4>
+        </div>
+    </div>
+
+    <div class="chef">
+        <marquee behavior="scroll" direction="left">
+            <img height="300px" width="300px" src="https://viewthevibe.com/wp-content/uploads/2020/11/how-to-learn-to-cook-like-a-chef-1120x746.jpeg" alt="Chef Image 1">
+            <img height="300px" width="300px" src="https://img.freepik.com/premium-photo/smiling-chef-with-arms-crossed-professional-kitchen_625233-2231.jpg" alt="Chef Image 2">
+            <img height="300px" width="300px" src="https://img.freepik.com/premium-photo/skilled-young-chef-work-generative-ai_506134-8327.jpg" alt="Chef Image 3">
+        </marquee>
+    </div>
+
+    <div class="footer">
+        <div class="footer-container">
+            <h4>Contact US</h4>                
+            <p>VINDU ARCHI CATERING SERVICES</p>
+            <p>Phone: +91 04078912</p>
+            <p>Email: Vindu5@gmail.com</p>
+        </div>
+        <div class="footer-section">
+            <h4>Quick Links</h4>
+            <p>About Us</p>
+            <p>Services</p>
+            <p>Chiefs</p>
+        </div>
+        <div class="footer-selection">
+            <h4>Follow us</h4>
+            <p>Facebook</p>
+            <p>Twitter</p>
+            <p>Instagram</p>
+        </div>
+    </div>
+</body>
+</html>
+
